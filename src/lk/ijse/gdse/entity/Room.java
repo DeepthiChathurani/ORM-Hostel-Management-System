@@ -1,10 +1,19 @@
 package lk.ijse.gdse.entity;
 
+import javax.persistence.*;
+
+@Table(name = "room")
 public class Room {
 
+    @Id
+    @Column(name = "room_type_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String rId;
+    @Column(name = "type")
     private String type;
+    @Column(name = "key_money")
     private String keyMoney;
+    @Column(name = "qty")
     private int qty;
 
     public Room() {

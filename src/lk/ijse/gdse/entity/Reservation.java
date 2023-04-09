@@ -1,13 +1,22 @@
 package lk.ijse.gdse.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Table(name = "reservation")
 public class Reservation {
 
+    @Id
+    @Column(name = "res_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
+    @Column(name = "date")
     private Date date;
+    @Column(name = "student_id")
     private String stdId;
+    @Column(name = "room_type_id")
     private String roomTypeId;
+    @Column(name = "status")
     private String status;
 
     public Reservation() {

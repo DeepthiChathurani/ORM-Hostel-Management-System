@@ -1,24 +1,29 @@
 package lk.ijse.gdse.entity;
 
-
-import com.sun.javafx.beans.IDProperty;
-
+import javax.persistence.*;
 import java.util.Date;
-
+@Table(name ="student" )
 public class Student {
-
-    private String stdId;
+    @Id
+    @Column(name = "student_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  String stdId;
+    @Column(name = "name")
     private String name;
+    @Column(name = "address")
     private String address;
+    @Column(name = "contact_no")
     private String contact_no;
+    @Column(name = "dob")
     private Date dob;
+    @Column(name = "gender")
     private String gender;
 
     public Student() {
     }
 
-    public Student(String id, String name, String address, String contact_no, Date dob, String gender) {
-        this.id = id;
+    public Student(String stdId, String name, String address, String contact_no, Date dob, String gender) {
+        this.stdId = stdId;
         this.name = name;
         this.address = address;
         this.contact_no = contact_no;
@@ -26,12 +31,12 @@ public class Student {
         this.gender = gender;
     }
 
-    public String getId() {
-        return id;
+    public String getStdId() {
+        return stdId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setStdId(String stdId) {
+        this.stdId = stdId;
     }
 
     public String getName() {
