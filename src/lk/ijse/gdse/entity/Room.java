@@ -1,6 +1,8 @@
 package lk.ijse.gdse.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Table(name = "room")
 public class Room {
@@ -15,6 +17,9 @@ public class Room {
     private String keyMoney;
     @Column(name = "qty")
     private int qty;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "room")
+    private List<Reservation> reservationList=new ArrayList<>();
 
     public Room() {
     }

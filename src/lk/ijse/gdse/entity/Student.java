@@ -1,7 +1,10 @@
 package lk.ijse.gdse.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
 @Table(name ="student" )
 public class Student {
     @Id
@@ -18,6 +21,9 @@ public class Student {
     private Date dob;
     @Column(name = "gender")
     private String gender;
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "student")
+    private List<Reservation> reservationList=new ArrayList<>();
 
     public Student() {
     }
