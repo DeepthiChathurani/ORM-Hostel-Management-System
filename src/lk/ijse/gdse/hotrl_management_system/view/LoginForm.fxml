@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="ancLogin" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #43c9e4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.LoginFormController">
+<AnchorPane fx:id="ancLogin" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #43c9e4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hotrl_management_system.controller.LoginFormController">
    <children>
       <Label layoutX="421.0" layoutY="53.0" prefHeight="58.0" prefWidth="525.0" text="Hotel Management System" textFill="#7c6161">
          <font>
@@ -51,7 +50,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </Button>
-      <Button blendMode="SRC_ATOP" layoutX="745.0" layoutY="620.0" mnemonicParsing="false" onAction="#btnSing" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: #15cd24;" text="SING" textFill="WHITE">
+      <Button blendMode="SRC_ATOP" layoutX="745.0" layoutY="620.0" mnemonicParsing="false" onAction="#btnSing" prefHeight="51.0" prefWidth="262.0" style="-fx-background-color: #15cd24;" text="SING IN" textFill="WHITE">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
@@ -70,5 +69,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
+      <Button layoutX="1169.0" layoutY="389.0" mnemonicParsing="false" onAction="#btnshow" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: purple;" text="Show" />
    </children>
 </AnchorPane>
