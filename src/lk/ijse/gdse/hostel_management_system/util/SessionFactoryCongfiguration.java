@@ -1,4 +1,4 @@
-package lk.ijse.gdse.hotrl_management_system.util;
+package lk.ijse.gdse.hostel_management_system.util;
 
 import lk.ijse.gdse.entity.Student;
 import org.hibernate.HibernateException;

@@ -1,4 +1,4 @@
-package lk.ijse.gdse.hotrl_management_system.entity;
+package lk.ijse.gdse.hostel_management_system.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

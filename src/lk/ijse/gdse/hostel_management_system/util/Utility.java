@@ -1,4 +1,4 @@
-package lk.ijse.gdse.hotrl_management_system.util;
+package lk.ijse.gdse.hostel_management_system.util;
 
 
 
