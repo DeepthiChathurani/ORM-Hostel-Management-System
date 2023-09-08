@@ -7,11 +7,12 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="anc" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.StudentFormcontroller">
+<AnchorPane fx:id="anc" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.StudentFormcontroller">
    <children>
       <Label layoutX="561.0" layoutY="57.0" prefHeight="62.0" prefWidth="244.0" text="Student Form">
          <font>
@@ -84,5 +85,10 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
+      <ImageView fitHeight="62.0" fitWidth="72.0" layoutX="120.0" layoutY="37.0" onDragDetected="#btnHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/home.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

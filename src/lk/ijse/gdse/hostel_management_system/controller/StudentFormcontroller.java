@@ -2,6 +2,7 @@ package lk.ijse.gdse.hostel_management_system.controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class StudentFormcontroller {
@@ -30,5 +31,8 @@ public class StudentFormcontroller {
     }
 
     public void btnSearch(ActionEvent actionEvent) {
+    }
+
+    public void btnHome(MouseEvent mouseEvent) {
     }
 }
