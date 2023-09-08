@@ -6,6 +6,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.gdse.hostel_management_system.util.Navigation;
+import lk.ijse.gdse.hostel_management_system.util.Routes;
+
+import java.io.IOException;
 
 public class RoomFormController {
     public AnchorPane anc;
@@ -28,6 +32,7 @@ public class RoomFormController {
     public void btnUpdate(ActionEvent actionEvent) {
     }
 
-    public void btnHome(MouseEvent mouseEvent) {
+    public void btnHome(MouseEvent mouseEvent) throws IOException {
+        Navigation.navigation(Routes.Home,anc);
     }
 }

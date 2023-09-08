@@ -4,6 +4,10 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import lk.ijse.gdse.hostel_management_system.util.Navigation;
+import lk.ijse.gdse.hostel_management_system.util.Routes;
+
+import java.io.IOException;
 
 public class StudentFormcontroller {
     public AnchorPane anc;
@@ -33,6 +37,7 @@ public class StudentFormcontroller {
     public void btnSearch(ActionEvent actionEvent) {
     }
 
-    public void btnHome(MouseEvent mouseEvent) {
+    public void btnHome(MouseEvent mouseEvent) throws IOException {
+        Navigation.navigation(Routes.Home,anc);
     }
 }

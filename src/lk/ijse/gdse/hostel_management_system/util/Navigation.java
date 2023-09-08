@@ -21,6 +21,26 @@ public class Navigation {
                 window.setTitle("SignUp From");
                 initUI("SignUpForm.fxml");
                 break;
+            case Home:
+                window.setTitle("Home From");
+                initUI("HomeForm.fxml");
+                break;
+            case STUDENT:
+                window.setTitle("Student From");
+                initUI("StudentForm.fxml");
+                break;
+            case ROOM:
+                window.setTitle("Room From");
+                initUI("RoomForm.fxml");
+                break;
+            case RESERVATION:
+                window.setTitle("Reservation From");
+                initUI("ReservationForm.fxml");
+                break;
+            case USER:
+                window.setTitle("User From");
+                initUI("UserForm.fxml");
+                break;
         }
     }
     private static void initUI(String location) throws IOException {
