@@ -1,5 +1,8 @@
 package lk.ijse.gdse.hostel_management_system.entity;
 
+import lk.ijse.gdse.hostel_management_system.dto.RoomDTO;
+import lk.ijse.gdse.hostel_management_system.dto.StudentDTO;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -12,21 +15,36 @@ public class Reservation {
     private String id;
     @Column(name = "date")
     private Date date;
+
+    @ManyToOne
     @Column(name = "student_id")
-    private String stdId;
+    private Student stdId;
+    @ManyToOne
     @Column(name = "room_type_id")
-    private String roomTypeId;
+    private Room roomTypeId;
     @Column(name = "status")
     private String status;
 
+
+
+    @JoinColumn(name = "studentId")
+    private Student student;
+
+
     public Reservation() {
     }
-    public Reservation(String id, Date date, String stdId, String roomTypeId, String status) {
+    public Reservation(String id, Date date, Student stdId, Room roomTypeId, String status) {
         this.id = id;
         this.date = date;
         this.stdId = stdId;
         this.roomTypeId = roomTypeId;
         this.status = status;
+    }
+
+    public Reservation(String resId, java.sql.Date date, String status, Student student, Room room) {
+    }
+
+    public Reservation(String resId, java.sql.Date date, String status) {
     }
 
     public String getId() {
@@ -45,19 +63,19 @@ public class Reservation {
         this.date = date;
     }
 
-    public String getStdId() {
+    public Student getStdId() {
         return stdId;
     }
 
-    public void setStdId(String stdId) {
+    public void setStdId(Student stdId) {
         this.stdId = stdId;
     }
 
-    public String getRoomTypeId() {
+    public Room getRoomTypeId() {
         return roomTypeId;
     }
 
-    public void setRoomTypeId(String roomTypeId) {
+    public void setRoomTypeId(Room roomTypeId) {
         this.roomTypeId = roomTypeId;
     }
 
@@ -67,5 +85,14 @@ public class Reservation {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+
+    public RoomDTO getRoom() {
+        return null;
+    }
+
+    public StudentDTO getStudent() {
+        return null;
     }
 }

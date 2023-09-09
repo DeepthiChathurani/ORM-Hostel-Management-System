@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anc" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.UserFormController">
+<AnchorPane fx:id="anc" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.UserFormController">
    <children>
       <Label layoutX="506.0" layoutY="39.0" prefHeight="51.0" prefWidth="179.0" text="User Form">
          <font>
@@ -39,7 +39,7 @@
             <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
-      <Button layoutX="139.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Add" textFill="#fffdfd">
+      <Button fx:id="btnSave" layoutX="139.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Add" textFill="#fffdfd">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -50,7 +50,7 @@
             <DropShadow />
          </effect>
       </Button>
-      <Button layoutX="306.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: red;" text="Delete" textFill="#fffdfd">
+      <Button fx:id="btnDelete" layoutX="306.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: red;" text="Delete" textFill="#fffdfd">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -84,7 +84,7 @@
             <TableColumn fx:id="colContactNo" prefWidth="120.0" text="Contact No" />
         </columns>
       </TableView>
-      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="92.0" layoutY="32.0" onDragDetected="#btnHome" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="92.0" layoutY="32.0" onMouseClicked="#btnHome" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/home.png" />
          </image>

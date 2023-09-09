@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anc" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.RoomFormController">
+<AnchorPane fx:id="anc" prefHeight="750.0" prefWidth="1366.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.RoomFormController">
    <children>
       <Label layoutX="580.0" layoutY="49.0" prefHeight="51.0" prefWidth="219.0" text="Room Form" textFill="#aded2b">
          <font>
@@ -43,7 +43,7 @@
       <TextField fx:id="txtType" layoutX="355.0" layoutY="334.0" prefHeight="38.0" prefWidth="226.0" />
       <TextField fx:id="txtKeyMoney" layoutX="354.0" layoutY="405.0" prefHeight="38.0" prefWidth="226.0" />
       <TextField fx:id="txtQty" layoutX="354.0" layoutY="473.0" prefHeight="38.0" prefWidth="226.0" />
-      <Button layoutX="150.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="45.0" prefWidth="131.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+      <Button fx:id="btnSave" layoutX="150.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="45.0" prefWidth="131.0" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -54,7 +54,7 @@
             <Bloom />
          </effect>
       </Button>
-      <Button layoutX="316.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="45.0" prefWidth="131.0" style="-fx-background-color: Red;" text="Delete" textFill="WHITE">
+      <Button fx:id="btnDelete" layoutX="316.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="45.0" prefWidth="131.0" style="-fx-background-color: Red;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -84,7 +84,7 @@
             <TableColumn fx:id="colQty" prefWidth="129.0" text="Qty" />
         </columns>
       </TableView>
-      <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="94.0" layoutY="42.0" onDragDetected="#btnHome" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="94.0" layoutY="42.0" onDragDetected="#btnHome" onMouseClicked="#btnHome" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/home.png" />
          </image>

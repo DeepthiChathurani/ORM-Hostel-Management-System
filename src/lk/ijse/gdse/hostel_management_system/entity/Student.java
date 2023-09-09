@@ -1,6 +1,7 @@
 package lk.ijse.gdse.hostel_management_system.entity;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -25,7 +26,7 @@ public class Student {
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "student")
     private List<Reservation> reservationList=new ArrayList<>();
 
-    public Student() {
+    public Student(String studentId, String name, String address, String contact, LocalDate dob, String gender) {
     }
 
     public Student(String stdId, String name, String address, String contact_no, Date dob, String gender) {

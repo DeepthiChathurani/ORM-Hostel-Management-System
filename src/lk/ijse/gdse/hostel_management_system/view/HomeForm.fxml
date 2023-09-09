@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="anc" prefHeight="768.0" prefWidth="1300.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.HomeFormController">
+<AnchorPane fx:id="anc" prefHeight="750.0" prefWidth="1300.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.HomeFormController">
    <children>
       <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="35.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -19,7 +18,7 @@
             <Font name="System Bold" size="35.0" />
          </font>
       </Label>
-      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="119.0" onDragDetected="#btnStudent" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="119.0" onMouseClicked="#btnStudent" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/student.png" />
          </image>
@@ -29,7 +28,7 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="239.0" onDragDetected="#btnRoom" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="239.0" onMouseClicked="#btnRoom" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/room.png" />
          </image>
@@ -39,7 +38,7 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="364.0" onDragDetected="#btnReservation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="364.0" onDragDetected="#btnReservation" onMouseClicked="#btnReservation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/reservation.png" />
          </image>
@@ -49,7 +48,7 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="487.0" onDragDetected="#btnUser" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="487.0" onMouseClicked="#btnUser" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/user.png" />
          </image>
@@ -59,7 +58,7 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="64.0" fitWidth="73.0" layoutX="85.0" layoutY="638.0" onDragDetected="#btnLogOut" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="64.0" fitWidth="73.0" layoutX="85.0" layoutY="638.0" onMouseClicked="#btnLogOut" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/logout.png" />
          </image>

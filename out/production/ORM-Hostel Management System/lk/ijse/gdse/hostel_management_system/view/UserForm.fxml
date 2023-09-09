@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.UserFormController">
+   <children>
+      <Label layoutX="506.0" layoutY="39.0" prefHeight="51.0" prefWidth="179.0" text="User Form">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="282.0" prefHeight="32.0" prefWidth="179.0" text="User Name :-" textFill="#220783">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="349.0" prefHeight="32.0" prefWidth="179.0" text="Password :-" textFill="#220783">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="220.0" prefHeight="32.0" prefWidth="179.0" text="User Id :-" textFill="#220783">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="407.0" prefHeight="36.0" prefWidth="167.0" text="Contac no :-" textFill="#220783">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="139.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: blue;" text="Add" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="306.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: red;" text="Delete" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button layoutX="470.0" layoutY="498.0" mnemonicParsing="false" onAction="#btnupdate" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: green;" text="Update" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="txtId" layoutX="338.0" layoutY="220.0" prefHeight="36.0" prefWidth="225.0" />
+      <TextField fx:id="txtName" layoutX="338.0" layoutY="282.0" prefHeight="36.0" prefWidth="225.0" />
+      <TextField fx:id="txtPassword" layoutX="338.0" layoutY="349.0" prefHeight="36.0" prefWidth="225.0" />
+      <TextField fx:id="txtContactNo" layoutX="338.0" layoutY="407.0" prefHeight="36.0" prefWidth="225.0" />
+      <TableView fx:id="tblUser" layoutX="613.0" layoutY="182.0" prefHeight="278.0" prefWidth="464.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="100.0" text="Id" />
+          <TableColumn fx:id="ColName" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="colPassword" prefWidth="124.0" text="Password" />
+            <TableColumn fx:id="colContactNo" prefWidth="120.0" text="Contact No" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="92.0" layoutY="32.0" onMouseClicked="#btnHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

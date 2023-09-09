@@ -6,7 +6,7 @@ public class UserDTO {
     private String password;
     private String contact;
 
-    public UserDTO() {
+    public UserDTO(String id, String userName, String password) {
     }
 
 

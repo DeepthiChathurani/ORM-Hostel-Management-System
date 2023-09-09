@@ -1,17 +1,18 @@
 package lk.ijse.gdse.hostel_management_system.dto;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class StudentDTO {
     private String studentId;
     private String name;
     private String address;
     private String contact;
-    private String dob;
+    private LocalDate dob;
     private String gender;
 
-    public StudentDTO() {
-    }
 
-    public StudentDTO(String studentId, String name, String address, String contact, String dob, String gender) {
+    public StudentDTO(String studentId, String name, String address, String contact, LocalDate dob, String gender) {
         this.studentId = studentId;
         this.name = name;
         this.address = address;
@@ -52,11 +53,11 @@ public class StudentDTO {
         this.contact = contact;
     }
 
-    public String getDob() {
+    public LocalDate getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 

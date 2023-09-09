@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anc" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.ReservationFormController">
+<AnchorPane fx:id="anc" prefHeight="750.0" prefWidth="1366.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.ReservationFormController">
    <children>
       <Label layoutX="514.0" layoutY="64.0" prefHeight="58.0" prefWidth="338.0" text="Reservation Form" textFill="#fcf9f9">
          <font>
@@ -41,17 +42,11 @@
             <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="131.0" layoutY="577.0" prefHeight="37.0" prefWidth="167.0" text="Status :-">
-         <font>
-            <Font name="System Bold Italic" size="25.0" />
-         </font>
-      </Label>
       <TextField fx:id="txtResId" layoutX="180.0" layoutY="248.0" prefHeight="37.0" prefWidth="203.0" />
       <DatePicker fx:id="Date" layoutX="521.0" layoutY="248.0" prefHeight="37.0" prefWidth="153.0" />
       <ComboBox fx:id="cmbStudentId" layoutX="333.0" layoutY="359.0" prefHeight="37.0" prefWidth="211.0" />
       <ComboBox fx:id="cmbRoomTypeId" layoutX="333.0" layoutY="443.0" prefHeight="37.0" prefWidth="211.0" />
-      <TextField fx:id="txtStatus" layoutX="333.0" layoutY="577.0" prefHeight="37.0" prefWidth="211.0" />
-      <Button layoutX="60.0" layoutY="665.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: blue;" text="Add" textFill="#fffefe">
+      <Button fx:id="btnSave" layoutX="60.0" layoutY="665.0" mnemonicParsing="false" onAction="#btnAdd" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: blue;" text="Add" textFill="#fffefe">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -112,10 +107,15 @@
          </font>
       </Label>
       <TextField fx:id="txtQty" layoutX="333.0" layoutY="513.0" prefHeight="37.0" prefWidth="211.0" />
-      <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="151.0" layoutY="64.0" onDragDetected="#btnHome" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="151.0" layoutY="64.0" onMouseClicked="#btnHome" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/home.png" />
          </image>
       </ImageView>
+      <CheckBox fx:id="chckbxStatus" layoutX="333.0" layoutY="578.0" mnemonicParsing="false" onAction="#chckbtnStatus" prefHeight="37.0" prefWidth="211.0" text="Status">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </CheckBox>
    </children>
 </AnchorPane>

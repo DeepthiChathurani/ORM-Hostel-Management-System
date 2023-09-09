@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anc" prefHeight="750.0" prefWidth="1300.0" style="-fx-background-color: #008fa6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.hostel_management_system.controller.HomeFormController">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="59.0" layoutX="35.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="22.0" prefHeight="51.0" prefWidth="109.0" text="Home">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="119.0" onMouseClicked="#btnStudent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="147.0" prefHeight="24.0" prefWidth="146.0" text="Student Form" textFill="#c4f502">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="239.0" onMouseClicked="#btnRoom" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/room.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="262.0" prefHeight="24.0" prefWidth="146.0" text="Room Form" textFill="#c4f502">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="364.0" onDragDetected="#btnReservation" onMouseClicked="#btnReservation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/reservation.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="388.0" prefHeight="32.0" prefWidth="184.0" text="Reservation Form" textFill="#c4f502">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="79.0" layoutX="84.0" layoutY="487.0" onMouseClicked="#btnUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="511.0" prefHeight="32.0" prefWidth="184.0" text="User Form" textFill="#c4f502">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="73.0" layoutX="85.0" layoutY="638.0" onMouseClicked="#btnLogOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="184.0" layoutY="648.0" prefHeight="45.0" prefWidth="119.0" text="LogOut" textFill="#9e3232">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="636.0" fitWidth="876.0" layoutX="410.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hostel.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

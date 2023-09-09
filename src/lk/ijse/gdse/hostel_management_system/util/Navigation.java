@@ -15,7 +15,7 @@ public class Navigation {
         switch (routes) {
             case LOGIN:
                 window.setTitle("Login From");
-                initUI("LoginFrom.fxml");
+                initUI("LoginForm.fxml");
                 break;
             case SINGUP:
                 window.setTitle("SignUp From");
